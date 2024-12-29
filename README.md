@@ -87,6 +87,7 @@ class OptionalLogger {
 ```
 
 Yes, we need to mirror all the APIs we're going to use.
+And yes, we need to test it with and without slf4j on the classpath.
 
 ### Running the demo
 
@@ -126,7 +127,7 @@ It'd print
 [main] INFO io.maven_compile_only.library.TestClass - Doing something
 ```
 
-We have absolutely optional dependency.
+See, we have an absolutely optional dependency now.
 
 ### Alternatives to this approach
 
@@ -138,4 +139,4 @@ We have absolutely optional dependency.
 
 ### Open questions
 
-Still looking for an easy solution to would convert "internal" pom to the "public" one. If you know one, hit me up.
+Still looking for an easy solution to would generate "public" pom from internal one. If you know an easy way, hit me up.
